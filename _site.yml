@@ -1,0 +1,24 @@
+name: "quantitations"
+output_dir: "."
+navbar:
+  title: "Quantitations"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Books"
+      href: books.html
+    - text: "Research"
+      href: research.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Web apps"
+      href: web-apps.html
+    - text: "Curriculum vitae"
+      href: curriculum-vitae.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css

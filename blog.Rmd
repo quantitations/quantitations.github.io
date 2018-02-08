@@ -1,0 +1,8 @@
+---
+title: "Blog"
+---
+
+I blog about mathematics, data science, productivity, and whatever else I'm thinking about.
+
+
+NOW Use R to create a list of the posts and make links to them.

@@ -1,0 +1,13 @@
+---
+title: "Home"
+---
+
+"business card page"
+
+Logo (centered)
+
+then, some space, then as image floating on right:
+
+Statistical consultancy of
+W. D. Brinda, PhD
+wdb@quantitations.com
