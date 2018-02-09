@@ -2,7 +2,16 @@
 title: "Blog"
 ---
 
+
+MAKE my Q the favicon - needs to be set in an html header - is that working?
+
+
 I blog about mathematics, data science, productivity, and whatever else I'm thinking about.
 
 
 NOW Use R to create a list of the posts and make links to them.
+
+
+
+FIRST: PROOF OF CONCEPT - make sure I can make R create html file that behave nicely when linked from this page.
+

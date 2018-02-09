@@ -1,13 +1,10 @@
 ---
-title: "Home"
+title: ""
+output:
+  html_document:
+    include:
+      after_body:
+        - card.html
+        - footer.html
 ---
-
-"business card page"
-
-Logo (centered)
-
-then, some space, then as image floating on right:
-
-Statistical consultancy of
-W. D. Brinda, PhD
-wdb@quantitations.com
+ 

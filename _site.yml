@@ -17,8 +17,9 @@ navbar:
       href: curriculum-vitae.html
 output:
   html_document:
-    theme: cosmo
+    theme: journal
     highlight: textmate
     include:
+      in_header: header.html
       after_body: footer.html
-    css: styles.css
+    css: style.css
