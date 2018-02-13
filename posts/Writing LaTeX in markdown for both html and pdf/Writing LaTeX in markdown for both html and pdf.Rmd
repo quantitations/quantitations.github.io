@@ -1,0 +1,80 @@
+---
+title: "Writing LaTeX in markdown for both html and pdf"
+author: "W. D. Brinda"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+\newcommand{\E}{\mathbb{E}}
+
+
+
+Markdown is a convenient language for creating neatly formatted documents that can readily incorporate LaTeX, code, program ouput, figures, and more. The type of document created can be html, pdf, or any of a variety of other formats that the user can specify. What's *less* convenient is that the LaTeX in a markdown file may work fine when converted to html but fail when converted to pdf, or vice versa. When converting to html, the LaTeX is left in the document to be [interpreted](https://www.mathjax.org/) by a browser when it renders the page. Browsers treat LaTeX differently than standard compilers do. Notably, delimiters such as `$...$` and `\[...\]` tell a compiler to enter *math mode*, but they only tell a browser that their contents are LaTeX of some sort. The browser is more flexible about whether or not to use *math mode*.
+
+The sections below provide two short examples that each demonstrate a way to make your markdown behave itself. In the [first section](#alignment), the incompatibility is solved by simply switching to a different LaTeX command; this is a clean solution and should be preferred when available. The [second section](#macros) shows how an *extension* can come to the rescue.
+
+
+
+
+## Alignment of equations {#alignment}
+
+
+Some LaTeX delimiters such as `\begin{align}...\end{align}` cause the compiler to enter math mode and fails if the interpreter is already in math mode. An alternative command `\begin{aligned}...\end{aligned}` is the correct way to create the equation aligning environment when you are already in math mode.
+
+Thus both
+```
+\[
+\begin{align}
+x &\leq x + 1\\
+ &\leq x + 2
+\end{align}
+\]
+```
+and
+```
+\[
+\begin{aligned}
+x &\leq x + 1\\
+ &\leq x + 2
+\end{aligned}
+\]
+```
+work fine in a browser to produce
+\[
+\begin{aligned}
+x &\leq x + 1\\
+ &\leq x + 2
+\end{aligned}
+\]
+However, the former causes standard LaTeX compilers to fail, while the latter continues to work.
+
+
+
+
+## Defining macros {#macros}
+
+
+A macro definition should occur *outside of math mode*. Suppose your markdown file includes, for instance,
+```
+\[
+\newcommand{\E}{\mathbb{E}}
+\]
+```
+A browser interprets this macro definition as you intended, but an ordinary compiler doesn't because `\[...\]` puts it into math mode. You need the markdown file to exclude those delimiters when compiling to pdf but include them when making html. Fortunately, there's a Pandoc^[*Pandoc* is a common program used for interpreting markdown; it is what the *rmarkdown* R package uses.] [extension](https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#latex_macros) that allows macro definitions for html documents without delimiters. Here's an example of how to include this extension:
+```
+output:
+  html_document:
+    md_extensions: +latex_macros
+```
+The extension is allowed with the output type `pdf_document` as well. Now the delimiters can be avoided, and
+```
+\newcommand{\E}{\mathbb{E}}
+```
+will cause `\E` to turn into $\E$ in both the html and pdf compilations.
+
+Pandoc version 2.0 (or later) includes the LaTeX macro functionality by default, so you could upgrade^[An earlier version of Pandoc comes with the rmarkdown R package.] Pandoc instead of using `+latex_macros`.

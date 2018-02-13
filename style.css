@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+h1.title {
+  margin-bottom: 30px;
+}
+
 .shadow {
   border-left: 1px solid rgba(0,0,0,.2);
   border-top: 1px solid rgba(0,0,0,.1);
