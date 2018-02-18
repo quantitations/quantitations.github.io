@@ -59,7 +59,7 @@ However, the former causes standard LaTeX compilers to fail, while the latter co
 ## Defining macros {#macros}
 
 
-A macro definition should occur *outside of math mode*. Suppose your markdown file includes, for instance,
+A [macro](https://en.wikibooks.org/wiki/LaTeX/Macros) definition should occur *outside of math mode*. Suppose your markdown file includes, for instance,
 ```
 \[
 \newcommand{\E}{\mathbb{E}}
