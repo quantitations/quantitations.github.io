@@ -12,7 +12,7 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 - revealing visual or intuitive ways of understanding concepts
 
 
-#Articles
+## Articles
 
 - W. D. Brinda. *Adaptive estimation with Gaussian radial basis mixtures*. PhD thesis, Yale University, 2018.
 - W. D. Brinda and Jason M. Klusowski. Finite-sample risk bounds for maximum likelihood estimation with arbitrary penalties. *IEEE Transactions on Information Theory*, 2018.
@@ -20,12 +20,12 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 - W. D. Brinda, Shantanu Jain, and Michael Trosset. Inference on random graphs with classified edge attributes. Indiana University Department of Statistics Technical Report 11-03, 2011.
 
 
-####Submitted
+#### Submitted
 
 - [Estimating the coefficients of a mixture of two linear regressions by expectation maximization](http://arxiv.org/pdf/1608.02280.pdf)
 
 
-####In preparation
+#### In preparation
 
 - [Teleport annealing](static/papers/teleport-annealing.pdf)
 - [H&ouml;lder's identity](static/papers/holders-identity.pdf)
@@ -36,7 +36,7 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 - [Performance of the tensor power method for Gaussian mixtures](static/papers/performance-of-the-tensor-power-method-for-gaussian-mixtures.pdf)
 
 
-####Planned
+#### Planned
 
 - Extending MDL two-part coding risk bounds to continuous parameter spaces
 - The nonlinear power iteration algorithm
