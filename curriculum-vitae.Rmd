@@ -2,6 +2,5 @@
 title: "Curriculum vitae"
 ---
 
-reproduce my CV in html - ideally, write it in Rmd, then include it "before_body" - and use the same Rmd to produce both this page and the pdf version. - will likely need to work extensively on my css file to make this page look like I want it to.
 
-AT BOTTOM, LINK to a pdf and to my coursework and to the scan of my GRE scores.
+This page is under construction.

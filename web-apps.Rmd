@@ -3,31 +3,7 @@ title: "Web apps"
 ---
 
 
-Each title should link to the app. (I need to rewrite some of these apps to allow for other users and to improve them in other ways.) AND make a place to accept donations.
-
-
-
-Tyrannosaurus Prep (REDESIGN)
-
-- Paragraph describing this app (include description of podcast along with link).
-
-
-
-Bot Pilates
-
-- Paragraph describing this app.
-
-
-
-Daily Meals
-
-- Paragraph describing this app.
-
-
-
-Deliberate Practice
-
-- Paragraph describing this app.
+This page is under construction.
 
 
 

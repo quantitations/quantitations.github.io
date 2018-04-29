@@ -3,15 +3,19 @@ title: "Books"
 ---
 
 
-Each title should link to a page dedicated to that book. it includes: citation example, link to a website to purchase the book, link to errata document, link to view or download Introduction chapter, maybe more.
+*[Data Analysis with R: The Big Picture](static/books/big-picture.pdf)* - This book was mostly finished, and I've used it for a course. It's currently being expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
 
 
-A Systematic Introduction to Data Science (Publisher, Year)
+*A Systematic Guide to Mathematical Statistics* - This is a long-term project, but early drafts of some sections are posted below.
 
-- Paragraph describing this book (take from Introduction).
-
-
-
-A Systematic Guide to Mathematical Statistics (In progress)
-
-- Paragraph describing this book (take from Introduction).
+- [1-1 Topological spaces](static/books/1-1-topological-spaces.pdf)
+- [1-4 Normed spaces](static/books/1-4-normed-spaces.pdf)
+- [1-5 Inner product spaces](static/books/1-5-inner-product-spaces.pdf)
+- [2-1 Measurable spaces](static/books/2-1-measurable-spaces.pdf)
+- [2-2 Measures](static/books/2-2-measures.pdf)
+- [2-3 Integrals](static/books/2-3-integrals.pdf)
+- [2-4 Probability measures and expectations](static/books/2-4-probability-measures-and-expectations.pdf)
+- [2-5 Product spaces](static/books/2-5-product-spaces.pdf)
+- [2-6 Spaces of measurable functions](static/books/2-6-spaces-of-measurable-functions.pdf)
+- [2-7 Metric spaces of measures](static/books/2-7-metric-spaces-of-measures.pdf)
+- [3-3 Information theory](static/books/3-3-information-theory.pdf)
