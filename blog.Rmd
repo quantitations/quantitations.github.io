@@ -3,4 +3,4 @@ title: "Blog"
 ---
 
 
-I used to write quite a bit about mathematics, data science, productivity, and whatever else was on my mind. Some of my writings are still available at an old [blog](blog.quantitations.com), but most are currently scattered about on my computer. At some point, I hope to have time to organize everything and make it available and, better yet, to start posting regularly.
+I used to write quite a bit about mathematics, data science, productivity, and whatever else was on my mind. Some of my writings are still available at an old [blog](http://blog.quantitations.com), but most are currently scattered about on my computer. At some point, I hope to have time to organize everything and make it available and, better yet, to start posting regularly.
