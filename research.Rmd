@@ -14,7 +14,7 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 
 ## Articles
 
-- W. D. Brinda. *Adaptive estimation with Gaussian radial basis mixtures*. PhD thesis, Yale University, 2018.
+- W. D. Brinda. *Adaptive Estimation with Gaussian Radial Basis Mixtures*. PhD thesis, Yale University, 2018. ([pdf](static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures.pdf) | [code](static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures-code.zip))
 - W. D. Brinda and Jason M. Klusowski. Finite-sample risk bounds for maximum likelihood estimation with arbitrary penalties. *IEEE Transactions on Information Theory*, 2018.
 - Jason M. Klusowski and W. D. Brinda. Statistical guarantees for estimating the centers of a two-component Gaussian mixture by EM. Accepted to *Journal of Machine Learning Research*, 2018.
 - W. D. Brinda, Shantanu Jain, and Michael Trosset. Inference on random graphs with classified edge attributes. Indiana University Department of Statistics Technical Report 11-03, 2011.
