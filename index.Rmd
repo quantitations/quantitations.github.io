@@ -1,10 +1,11 @@
 ---
-title: "Quantitations LLC"
+title: ""
 output:
   html_document:
     include:
       after_body:
         - card.html
         - footer.html
+        - title-fix.html
 ---
  

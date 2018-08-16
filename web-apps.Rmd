@@ -3,8 +3,6 @@ title: "Web apps"
 ---
 
 
-This page is under construction.
+I made a [GRE vocab](gre.tyrannosaurusprep.com) game that's been used by hundreds of thousands of people worldwide.
 
-
-
-
+I've also made a variety of other web applications that will be listed and detailed here once I've gotten the time to polish them a bit more.

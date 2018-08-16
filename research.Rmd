@@ -5,8 +5,7 @@ title: "Research"
 
 I've worked on a variety of topics, but moving forward I'm primarily interested in:
 
-- adaptive estimation
-- simulated annealing
+- combining genetic algorithms with variants of simulated annealing
 - general applied statistics and machine learning
 - unifying and efficiently organizing mathematical statistical knowledge
 - revealing visual or intuitive ways of understanding concepts
@@ -23,12 +22,12 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 #### Submitted
 
 - [Estimating the coefficients of a mixture of two linear regressions by expectation maximization](http://arxiv.org/pdf/1608.02280.pdf)
+- [H&ouml;lder's identity](static/papers/holders-identity.pdf)
 
 
 #### In preparation
 
 - [Teleport annealing](static/papers/teleport-annealing.pdf)
-- [H&ouml;lder's identity](static/papers/holders-identity.pdf)
 - [Approximation by mixtures and geometric mixtures](static/papers/approximation-by-mixtures-and-geometric-mixtures.pdf)
 - [Hypothetical measures](static/papers/hypothetical-measures.pdf)
 - [Expected redundancy of mixtures from unconstrained families](static/papers/expected-redundancy-of-mixtures-from-unconstrained-families.pdf)
