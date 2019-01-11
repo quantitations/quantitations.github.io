@@ -3,7 +3,13 @@ title: "Books"
 ---
 
 
-*[Data Analysis with R: The Big Picture](static/books/big-picture.pdf)* - This book is almost finished, and I've used it for courses. It's may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
+*[Data Analysis with R: The Big Picture](static/books/big-picture.pdf)* - A gentle and systematic introduction for complete beginners. This book is almost finished, and I've used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
+
+
+*[Visualizing Linear Models](static/books/Visualizing-Linear-Models.pdf)* - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture.
+
+
+*Visualizing Random Vectors* - This will be a follow-up to *Visualizing Linear Models* that encourages the student to extend the two-pictures idea to random vectors more generally by understanding $L^2$ spaces using intuition from Euclidean space.
 
 
 *A Systematic Guide to Mathematical Statistics* - This is a long-term project, but early drafts of some sections are posted below.
@@ -19,6 +25,3 @@ title: "Books"
 - [2-6 Spaces of measurable functions](static/books/2-6-spaces-of-measurable-functions.pdf)
 - [2-7 Metric spaces of measures](static/books/2-7-metric-spaces-of-measures.pdf)
 - [3-3 Information theory](static/books/3-3-information-theory.pdf)
-
-
-*Visualizing Linear Models* - This textbook introduces the theory of linear models while connecting it deeply to functional analysis and probability theory. Throughout the text, drawings demonstrate how the material can be understood using intuition from Euclidean space. (A draft including several chapters will be posted soon.)
