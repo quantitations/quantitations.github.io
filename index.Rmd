@@ -3,9 +3,11 @@ title: ""
 output:
   html_document:
     include:
-      after_body:
+      before_body:
         - card.html
+      after_body:
         - footer.html
         - title-fix.html
 ---
- 
+
+ - Note: LLC not yet filed.

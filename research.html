@@ -98,6 +98,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -112,7 +115,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -132,6 +134,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -153,18 +192,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -227,16 +325,16 @@ $(document).ready(function () {
 <div id="articles" class="section level2">
 <h2>Articles</h2>
 <ul>
+<li>W. D. Brinda, Jason Klusowski, and Dana Yang. Hölder’s identity. <em>Statistics and Probability Letters</em>, 2019.</li>
+<li>Jason Klusowski, Dana Yang, and W. D. Brinda. <a href="http://arxiv.org/pdf/1608.02280.pdf">Estimating the coefficients of a mixture of two linear regressions by expectation maximization</a>. <em>IEEE Transactions on Information Theory</em>, 2019</li>
 <li>W. D. Brinda. <em>Adaptive Estimation with Gaussian Radial Basis Mixtures</em>. PhD thesis, Yale University, 2018. (<a href="static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures.pdf">pdf</a> | <a href="static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures-code.zip">code</a>)</li>
 <li>W. D. Brinda and Jason M. Klusowski. Finite-sample risk bounds for maximum likelihood estimation with arbitrary penalties. <em>IEEE Transactions on Information Theory</em>, 2018.</li>
-<li>Jason M. Klusowski and W. D. Brinda. Statistical guarantees for estimating the centers of a two-component Gaussian mixture by EM. Accepted to <em>Journal of Machine Learning Research</em>, 2018.</li>
 <li>W. D. Brinda, Shantanu Jain, and Michael Trosset. Inference on random graphs with classified edge attributes. Indiana University Department of Statistics Technical Report 11-03, 2011.</li>
 </ul>
 <div id="submitted" class="section level4">
 <h4>Submitted</h4>
 <ul>
-<li><a href="http://arxiv.org/pdf/1608.02280.pdf">Estimating the coefficients of a mixture of two linear regressions by expectation maximization</a></li>
-<li><a href="static/papers/holders-identity.pdf">Hölder’s identity</a></li>
+<li>Jason M. Klusowski and W. D. Brinda. Statistical guarantees for estimating the centers of a two-component Gaussian mixture by EM. Submitted.</li>
 </ul>
 </div>
 <div id="in-preparation" class="section level4">
@@ -259,7 +357,7 @@ $(document).ready(function () {
 </div>
 </div>
 
-<p id="footer">Copyright &copy; 2018 Quantitations LLC.</p>
+<p id="footer">Copyright &copy; 2019 Quantitations LLC.</p>
 
 
 

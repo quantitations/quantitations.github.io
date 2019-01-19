@@ -3,7 +3,7 @@ title: "Books"
 ---
 
 
-*[Data Analysis with R: The Big Picture](static/books/big-picture.pdf)* - A gentle and systematic introduction for complete beginners. This book is almost finished, and I've used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
+*[Data Analysis with R: The Big Picture](static/books/Data-Analysis-with-R.pdf)* - A gentle and systematic introduction for complete beginners. This book is almost finished, and I've used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
 
 
 *[Visualizing Linear Models](static/books/Visualizing-Linear-Models.pdf)* - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture.

@@ -98,6 +98,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -112,7 +115,6 @@ body {
   padding-top: 66px;
   margin-top: -66px;
 }
-
 .section h2 {
   padding-top: 66px;
   margin-top: -66px;
@@ -132,6 +134,43 @@ body {
 .section h6 {
   padding-top: 66px;
   margin-top: -66px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -153,18 +192,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -217,7 +315,7 @@ $(document).ready(function () {
 </div>
 
 
-<p><em><a href="static/books/big-picture.pdf">Data Analysis with R: The Big Picture</a></em> - A gentle and systematic introduction for complete beginners. This book is almost finished, and I’ve used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called <em>Data Science Workflow with R and the tidyverse</em>.</p>
+<p><em><a href="static/books/Data-Analysis-with-R.pdf">Data Analysis with R: The Big Picture</a></em> - A gentle and systematic introduction for complete beginners. This book is almost finished, and I’ve used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called <em>Data Science Workflow with R and the tidyverse</em>.</p>
 <p><em><a href="static/books/Visualizing-Linear-Models.pdf">Visualizing Linear Models</a></em> - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the <em>observations</em> picture and the <em>variables</em> picture.</p>
 <p><em>Visualizing Random Vectors</em> - This will be a follow-up to <em>Visualizing Linear Models</em> that encourages the student to extend the two-pictures idea to random vectors more generally by understanding <span class="math inline">\(L^2\)</span> spaces using intuition from Euclidean space.</p>
 <p><em>A Systematic Guide to Mathematical Statistics</em> - This is a long-term project, but early drafts of some sections are posted below.</p>
@@ -235,7 +333,7 @@ $(document).ready(function () {
 <li><a href="static/books/3-3-information-theory.pdf">3-3 Information theory</a></li>
 </ul>
 
-<p id="footer">Copyright &copy; 2018 Quantitations LLC.</p>
+<p id="footer">Copyright &copy; 2019 Quantitations LLC.</p>
 
 
 
