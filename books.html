@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -71,9 +72,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -87,7 +86,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -192,8 +190,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -250,20 +246,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -316,7 +309,7 @@ $(document).ready(function () {
 
 
 <p><em><a href="static/books/Data-Analysis-with-R.pdf">Data Analysis with R: The Big Picture</a></em> - A gentle and systematic introduction for complete beginners. This book is almost finished, and I’ve used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called <em>Data Science Workflow with R and the tidyverse</em>.</p>
-<p><em><a href="static/books/Visualizing-Linear-Models.pdf">Visualizing Linear Models</a></em> - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the <em>observations</em> picture and the <em>variables</em> picture.</p>
+<p><em><a href="static/books/Visualizing-Linear-Models.pdf">Visualizing Linear Models</a></em> - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the <em>observations</em> picture and the <em>variables</em> picture. Accompanying <a href="static/books/visualizing-linear-models.colpkg">anki cards</a> help reinforce the material.</p>
 <p><em>Visualizing Random Vectors</em> - This will be a follow-up to <em>Visualizing Linear Models</em> that encourages the student to extend the two-pictures idea to random vectors more generally by understanding <span class="math inline">\(L^2\)</span> spaces using intuition from Euclidean space.</p>
 <p><em>A Systematic Guide to Mathematical Statistics</em> - This is a long-term project, but early drafts of some sections are posted below.</p>
 <ul>
@@ -351,6 +344,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
