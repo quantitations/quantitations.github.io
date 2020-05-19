@@ -424,7 +424,7 @@ nsim <- 10000
 scores <- mu.f.hat + rnorm(nsim, sd=attr(summary(m)$varcor$school, "stddev")) + rnorm(nsim, sd=attr(summary(m)$varcor$`student:school`, "stddev")) + rnorm(nsim, sd=sigma)
 sum(scores > 1200)/nsim
 
-# Only half a percent...
+# Only five percent...
 # I guess I didn't use very realistic parameters when generating the data!
 
 
