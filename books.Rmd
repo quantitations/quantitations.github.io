@@ -3,7 +3,6 @@ title: "Books"
 ---
 
 
-
 *[Visualizing Linear Models](https://www.springer.com/us/book/9783030641665)* (Springer, 2021) - This short textbook introduces the theory of linear models, emphasizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture. Accompanying [anki cards](static/books/visualizing-linear-models.colpkg) help reinforce the material.
 
 
