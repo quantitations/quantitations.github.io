@@ -3,13 +3,14 @@ title: "Books"
 ---
 
 
-*[Data Analysis with R: The Big Picture](static/books/Data-Analysis-with-R.pdf)* - A gentle and systematic introduction for complete beginners. This book is almost finished, and I've used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
 
-
-*[Visualizing Linear Models](static/books/Visualizing-Linear-Models.pdf)* - This short textbook introduces the theory of linear models, emphisizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture. Accompanying [anki cards](static/books/visualizing-linear-models.colpkg) help reinforce the material.
+*[Visualizing Linear Models](https://www.springer.com/us/book/9783030641665)* (Springer, 2021) - This short textbook introduces the theory of linear models, emphasizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture. Accompanying [anki cards](static/books/visualizing-linear-models.colpkg) help reinforce the material.
 
 
 *Visualizing Random Vectors* - This will be a follow-up to *Visualizing Linear Models* that encourages the student to extend the two-pictures idea to random vectors more generally by understanding $L^2$ spaces using intuition from Euclidean space.
+
+
+*[Data Analysis with R: The Big Picture](static/books/Data-Analysis-with-R.pdf)* - A gentle and systematic introduction for complete beginners. This book is almost finished, and I've used it for courses. It may eventually be expanded into a more computational and up-to-date textbook called *Data Science Workflow with R and the tidyverse*.
 
 
 *A Systematic Guide to Mathematical Statistics* - This is a long-term project, but early drafts of some sections are posted below.
