@@ -3,7 +3,7 @@ title: "Books"
 ---
 
 
-*[Visualizing Linear Models](https://www.springer.com/us/book/9783030641665)* (Springer, 2021) - This short textbook introduces the theory of linear models, emphasizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture. Accompanying flash cards ([anki](static/books/visualizing-linear-models.apkg) | [printable](static/books/visualizing-linear-models-printable-cards.pdf) | [document](static/books/visualizing-linear-models-exercises.pdf)) help reinforce the material.
+*[Visualizing Linear Models](https://www.dpbolvw.net/click-100373821-12898971?url=https%3A%2F%2Fwww.springer.com%2Fgp%2Fbook%2F9783030641665%3FcountryChanged%3Dtrue)* (Springer, 2021) - This short textbook introduces the theory of linear models, emphasizing two important and complementary ways of visualizing the concepts: the *observations* picture and the *variables* picture. Accompanying flash cards ([anki](static/books/visualizing-linear-models.apkg) | [printable](static/books/visualizing-linear-models-printable-cards.pdf) | [document](static/books/visualizing-linear-models-exercises.pdf)) help reinforce the material.
 
 
 *Visualizing Random Variables* - This will be a follow-up to *Visualizing Linear Models* that encourages the student to extend the two-pictures idea to random vectors more generally by understanding $L^2$ spaces using intuition from Euclidean space.
