@@ -31,7 +31,7 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 - [Hypothetical measures](static/papers/hypothetical-measures.pdf)
 - [Expected redundancy of mixtures from unconstrained families](static/papers/expected-redundancy-of-mixtures-from-unconstrained-families.pdf)
 - [Using the compensation identities to analyze risk of density estimation](static/papers/using-the-compensation-identities-to-analyze-risk-of-density-estimation.pdf)
-- [Performance of the tensor power method for Gaussian mixtures](static/papers/performance-of-the-tensor-power-method-for-gaussian-mixtures.pdf)
+- The third moment tensor method with principal components and basis expansion ([pdf](static/papers/tensor-method-with-pca-and-basis-expansion.pdf) | [code](static/papers/tensor-method-with-pca-and-basis-expansion.r))
 
 
 #### Planned
