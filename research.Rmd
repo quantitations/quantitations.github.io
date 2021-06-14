@@ -13,7 +13,7 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 
 ## Articles
 
-- W. D. Brinda, Jason Klusowski, and Dana Yang. H&ouml;lder's identity. *Statistics and Probability Letters*, 2019.
+- W. D. Brinda, Jason Klusowski, and Dana Yang. [H&ouml;lder's identity](static/papers/holders-identity.pdf). *Statistics and Probability Letters*, 2019.
 - Jason Klusowski, Dana Yang, and W. D. Brinda. [Estimating the coefficients of a mixture of two linear regressions by expectation maximization](http://arxiv.org/pdf/1608.02280.pdf). *IEEE Transactions on Information Theory*, 2019
 - W. D. Brinda. *Adaptive Estimation with Gaussian Radial Basis Mixtures*. PhD thesis, Yale University, 2018. ([pdf](static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures.pdf) | [code](static/papers/adaptive-estimation-with-gaussian-radial-basis-mixtures-code.zip))
 - W. D. Brinda and Jason M. Klusowski. Finite-sample risk bounds for maximum likelihood estimation with arbitrary penalties. *IEEE Transactions on Information Theory*, 2018.
@@ -22,19 +22,17 @@ I've worked on a variety of topics, but moving forward I'm primarily interested 
 
 #### Submitted
 
-- Jason M. Klusowski and W. D. Brinda. Statistical guarantees for estimating the centers of a two-component Gaussian mixture by EM. Submitted.
+- Jason M. Klusowski and W. D. Brinda. [Statistical guarantees for estimating the centers of a two-component Gaussian mixture by EM](https://arxiv.org/abs/1608.02280).
+- W. D. Brinda and Cate Mollerus. [Greedy approximation by mixture distributions](static/papers/greedy-approximation-by-mixture-distributions.pdf).
+- W. D. Brinda and Ruchira Ray. The third moment tensor method with principal components and basis expansion ([pdf](static/papers/tensor-method-with-pca-and-basis-expansion.pdf) | [code](static/papers/tensor-method-with-pca-and-basis-expansion.r))
+
 
 #### In preparation
 
-- [Teleport annealing](static/papers/teleport-annealing.pdf)
-- [Approximation by mixtures and geometric mixtures](static/papers/approximation-by-mixtures-and-geometric-mixtures.pdf)
-- [Hypothetical measures](static/papers/hypothetical-measures.pdf)
-- [Expected redundancy of mixtures from unconstrained families](static/papers/expected-redundancy-of-mixtures-from-unconstrained-families.pdf)
 - [Using the compensation identities to analyze risk of density estimation](static/papers/using-the-compensation-identities-to-analyze-risk-of-density-estimation.pdf)
-- The third moment tensor method with principal components and basis expansion ([pdf](static/papers/tensor-method-with-pca-and-basis-expansion.pdf) | [code](static/papers/tensor-method-with-pca-and-basis-expansion.r))
-
-
-#### Planned
-
-- Extending MDL two-part coding risk bounds to continuous parameter spaces
+- [Expected redundancy of mixtures from unconstrained families](static/papers/expected-redundancy-of-mixtures-from-unconstrained-families.pdf)
+- [Hypothetical measures](static/papers/hypothetical-measures.pdf)
 - The nonlinear power iteration algorithm
+- Teleport annealing
+
+
