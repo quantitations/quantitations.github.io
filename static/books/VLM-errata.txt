@@ -1,0 +1,11 @@
+Exercise 1.42 - First sentence of solution. "projection of onto" should have been "projection of y onto"
+
+Exercise 3.1 - "no greater than" should have been "at least as large as" - hopefully a confused reader would look at the solution in the back and realize that the question was stated incorrectly!
+
+Some exercise labels were printed in green but should have been colored blue:
+1.6
+1.9
+1.17
+1.18
+1.58
+

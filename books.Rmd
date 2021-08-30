@@ -7,6 +7,7 @@ title: "Books"
 
 - all exercises: [anki](static/books/VLM-all.apkg) | [printable document](static/books/VLM-all-exercises.pdf) | [printable cards](static/books/VLM-all-cards.pdf)
 - red + blue only: [anki](static/books/VLM-select.apkg) | [printable document](static/books/VLM-select-exercises.pdf) | [printable cards](static/books/VLM-select-cards.pdf)
+- [errata](static/books/VLM-errata.txt)
 
 
 *Visualizing Random Variables* - This will be a follow-up to *Visualizing Linear Models* that encourages the student to extend the two-pictures idea to random vectors more generally by understanding $L^2$ spaces using intuition from Euclidean space.
