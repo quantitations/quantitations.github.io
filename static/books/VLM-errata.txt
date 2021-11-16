@@ -1,6 +1,43 @@
+
+--------------------------- CONTENT ---------------------------
+
+Exercise 1.36 - "their squared coordinates" should have just been "their coordinates"
+
 Exercise 1.42 - First sentence of solution. "projection of onto" should have been "projection of y onto"
 
+page 30 first full paragraph - "spectral decomposition of M" should have been "spectral decomposition of M^T M, which has the same column space as M (to see why, study the solution to Exercise 1.63)"
+
+page 30 Exercise 1.74 and preceding 2 paragraphs - yhat should have been y
+
+Exercise 1.81 - should end with "the unit vector" u
+
+page 34 just before Exercise 1.83 - "average of rank one matrices ..." missing SUMMATION symbol after this
+
+Exercise 2.5 - solution should have shown one more step bringing norms into inner product.
+
 Exercise 3.1 - "no greater than" should have been "at least as large as" - hopefully a confused reader would look at the solution in the back and realize that the question was stated incorrectly!
+
+Definition (Independence) page 69 - g(X) should have been g(Y) in all three occurrences
+
+Exercise 3.9 - n x m should have been m x n ? too many m's though !
+
+Exercise 3.30 - should specify "unit vector" u
+
+Definition of Mahalanobis distance on page 77 - v should be in R^n rather than R.
+
+Exercise 4.15 - missing expectation on right hand side of first step in solution.
+
+Chi-squared definition (page 107) - missing squares on Z_1 + ... + Z_k (each term should be squared)
+
+
+--------------------------- FORMAT ------------------
+
+Theorem 1.2 - Missing a period at the end.
+
+Exercise 1.56 - Missing period at the end of first sentence.
+
+Exercise 6.3 - Second sentence of solution. "\Sigma" should have been "\Sigmabb" (double-stroke font)
+Exercise 6.7 - In the solution, three instances of "\Sigma" should have been "\Sigmabb" (double-stroke font)
 
 Some exercise labels were printed in green but should have been colored blue:
 1.6
@@ -9,3 +46,10 @@ Some exercise labels were printed in green but should have been colored blue:
 1.18
 1.58
 
+Exercise 1.28 solution (page 147) - diamond is on left instead of right
+
+Theorem 2.3 - comma is just inside the matrix, rather than after it
+
+Exercise 3.29 - x and y should have been bold in the question
+
+Exercise 4.18 - "vector do" should have been "vector does"
