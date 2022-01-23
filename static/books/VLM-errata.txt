@@ -5,6 +5,8 @@ Exercise 1.36 - "their squared coordinates" should have just been "their coordin
 
 Exercise 1.42 - First sentence of solution. "projection of onto" should have been "projection of y onto"
 
+page 21 last sentence of first partial paragraph - "product of a 1 x k matrix with a k x 1 matrix"
+
 page 30 first full paragraph - "spectral decomposition of M" should have been "spectral decomposition of M^T M, which has the same column space as M (to see why, study the solution to Exercise 1.63)"
 
 page 30 Exercise 1.74 and preceding 2 paragraphs - yhat should have been y
@@ -19,15 +21,21 @@ Exercise 3.1 - "no greater than" should have been "at least as large as" - hopef
 
 Definition (Independence) page 69 - g(X) should have been g(Y) in all three occurrences
 
-Exercise 3.9 - n x m should have been m x n ? too many m's though !
+Exercise 3.9 - random vector should have ended with X_m rather than X_n
 
 Exercise 3.30 - should specify "unit vector" u
 
 Definition of Mahalanobis distance on page 77 - v should be in R^n rather than R.
 
+page 78 last paragraph - "Mahalanobis distance from alpha*q_j to the distribution" should have instead had "mu + alpha*q_j"
+
+Exercise 4.3 - question says "are all the same number" but should be "are not all the same number"
+
 Exercise 4.15 - missing expectation on right hand side of first step in solution.
 
 Chi-squared definition (page 107) - missing squares on Z_1 + ... + Z_k (each term should be squared)
+
+Exercise 5.5 solution (page 161) - missing negative sign: first line of derivation in solution should have said Z \geq -t.
 
 
 --------------------------- FORMAT ------------------
