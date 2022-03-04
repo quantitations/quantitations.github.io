@@ -5,10 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Courses"
-      href: courses.html
-    - text: "Workshops"
-      href: workshops.html
+    - text: "Teaching"
+      href: teaching.html
     - text: "Books"
       href: books.html
     - text: "Web apps"

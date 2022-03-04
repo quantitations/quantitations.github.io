@@ -11,7 +11,7 @@
 
 
 
-<title>Selected course materials</title>
+<title>Teaching</title>
 
 <script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -278,10 +278,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="courses.html">Courses</a>
-</li>
-<li>
-  <a href="workshops.html">Workshops</a>
+  <a href="teaching.html">Teaching</a>
 </li>
 <li>
   <a href="books.html">Books</a>
@@ -310,14 +307,16 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Selected course materials</h1>
+<h1 class="title toc-ignore">Teaching</h1>
 
 </div>
 
 
+<div id="courses" class="section level2">
+<h2>Courses</h2>
 <p>Here are some of the courses I’ve taught at Yale along with sample materials.</p>
-<div id="linear-models-sds-312612" class="section level2">
-<h2>Linear Models (S&amp;DS-312/612)</h2>
+<div id="linear-models-sds-312612" class="section level3">
+<h3>Linear Models (S&amp;DS-312/612)</h3>
 <p>The geometry of least squares; properties of least-squares estimation in the context of linear models, bias-variance trade-off, inference for linear models with normal errors, analysis of variance and contrast tests; the R programming language is used throughout for homework.</p>
 <p>Sample material:</p>
 <ul>
@@ -331,8 +330,8 @@ $(document).ready(function () {
 <li>“When we tied everything together and summarized the course during our last class, my mind was blown by how beautifully everything fit together and by how much we have learned throughout the semester.”</li>
 </ul>
 </div>
-<div id="theory-of-statistics-sds-242542" class="section level2">
-<h2>Theory of Statistics (S&amp;DS-242/542)</h2>
+<div id="theory-of-statistics-sds-242542" class="section level3">
+<h3>Theory of Statistics (S&amp;DS-242/542)</h3>
 <p>Study of the principles of statistical analysis. Topics include maximum likelihood, sampling distributions, estimation, confidence intervals, tests of significance, regression, analysis of variance, and the method of least squares. Statistical computing with R.</p>
 <p>Sample material:</p>
 <ul>
@@ -344,8 +343,8 @@ $(document).ready(function () {
 <li>“I developed a greater appreciation for the mathematical foundation of many common statistical analyses. I learned how to think rigorously (i.e., in terms of proven theorems and corollaries) about parameter estimation, hypothesis testing, and linear regression, which yielded a deeper understanding of core concepts in data science.”</li>
 </ul>
 </div>
-<div id="data-analysis-sds-361661" class="section level2">
-<h2>Data Analysis (S&amp;DS-361/661)</h2>
+<div id="data-analysis-sds-361661" class="section level3">
+<h3>Data Analysis (S&amp;DS-361/661)</h3>
 <p>A broad survey of tools, tips, and techniques for data analysis. Topics include R programming, Python programming, web scraping and APIs, transformation, curve estimation, regularization and model selection, generalized linear models, maximum likelihood, optimization, classification, resampling methods, and more. Our focus is on performing techniques and not on the theory behind them.</p>
 <p>Sample material:</p>
 <ul>
@@ -356,6 +355,58 @@ $(document).ready(function () {
 <li>“I learned a lot about real-world data analysis… Dr. Brinda really pushed us to think about creative ways to analyze data which made the course exciting and rewarding.”</li>
 <li>“I felt like working through the homeworks was actually meaningful, improved my R and Python skills greatly, and could ultimately help me with data analysis I do in the future.”</li>
 </ul>
+<hr />
+</div>
+</div>
+<div id="workshops" class="section level2">
+<h2>Workshops</h2>
+<p>Here are some of the workshops I’ve taught at Yale along with sample materials.</p>
+<div id="mixed-effects-modeling-with-r" class="section level3">
+<h3>Mixed Effects Modeling with R</h3>
+<p>A <em>random effect</em> is a model coefficient that is itself modeled as a random draw from a distribution that may, in turn, involve unknown parameters. A <em>linear mixed effects model</em> can have both terms with fixed (unknown) coefficients and terms with random coefficients. This workshop begins by clarifying linear mixed effects models as a generalization of ordinary linear models then quickly moves into four concrete examples, while drawing plenty of plots to aid your understanding. (<a href="https://www.youtube.com/watch?v=JfWHZBfhOvE">video</a> | <a href="static/teaching/Mixed-Effects-Modeling-with-R.pdf">slides</a> | <a href="static/teaching/iterative-fitting-solutions.r">script</a>)</p>
+</div>
+<div id="principal-component-analysis-with-r" class="section level3">
+<h3>Principal Component Analysis with R</h3>
+<p><em>Principal components analysis (PCA)</em> is a technique for reducing the dimension of your data while preserving their “shape” as well as possible. In the first part of the workshop, we’ll cover the theory behind PCA. After that, we’ll work through several examples together using R. (<a href="static/teaching/Principal-Components-Analysis-with-R.pdf">slides</a> | <a href="static/teaching/PCA.r">script</a>)</p>
+</div>
+<div id="python-series" class="section level3">
+<h3>Python series</h3>
+<div id="session-1-intro" class="section level4">
+<h4>Session 1: Intro</h4>
+<ul>
+<li>Anaconda Navigator and Spyder</li>
+<li>language basics</li>
+<li>importing</li>
+<li>file manipulation</li>
+<li>string manipulation, including regular expressions</li>
+</ul>
+</div>
+<div id="session-2-showcase" class="section level4">
+<h4>Session 2: Showcase</h4>
+<ul>
+<li>system commands</li>
+<li>web scraping (requests, BeautifulSoup)</li>
+<li>scheduled tasks</li>
+<li>databases (SQLite, SQLAlchemy)</li>
+<li>apps (Flask)</li>
+</ul>
+</div>
+<div id="session-3-data-science-and-machine-learning" class="section level4">
+<h4>Session 3: Data Science and Machine Learning</h4>
+<ul>
+<li>SciPy ecosystem (NumPy, Pandas, SciPy, Matplotlib)</li>
+<li>Jupyter notebooks</li>
+<li>scikit-learn</li>
+</ul>
+</div>
+<div id="session-4-project" class="section level4">
+<h4>Session 4: Project</h4>
+<ul>
+<li>Federalist Papers (web scraping, NLP feature extraction, dimension reduction, classification)</li>
+</ul>
+<p>All Python workshop files are hosted on GitHub (<a href="https://github.com/quantitations/python-day1">Sessions 1 &amp; 2</a> | <a href="https://github.com/quantitations/python-day2">Sessions 3 &amp; 4</a>)</p>
+</div>
+</div>
 </div>
 
 <p id="footer">Copyright &copy; 2022 Quantitations LLC.</p>
