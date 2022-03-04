@@ -5,16 +5,20 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Courses"
+      href: courses.html
+    - text: "Workshops"
+      href: workshops.html
     - text: "Books"
       href: books.html
+    - text: "Web apps"
+      href: web-apps.html
+    - text: "Education"
+      href: education.html
     - text: "Research"
       href: research.html
     - text: "Blog"
       href: blog.html
-    - text: "Web apps"
-      href: web-apps.html
-    - text: "Curriculum vitae"
-      href: curriculum-vitae.html
 output:
   html_document:
     theme: journal

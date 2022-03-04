@@ -3,12 +3,7 @@ title: "Research"
 ---
 
 
-I've worked on a variety of topics, but moving forward I'm primarily interested in:
-
-- combining genetic algorithms with variants of simulated annealing
-- general applied statistics and machine learning
-- unifying and efficiently organizing mathematical statistical knowledge
-- revealing visual or intuitive ways of understanding concepts
+I've worked on a variety of topics including non-parametric penalized likelihood estimation, the EM algorithm, simulated annealing, and third moment tensor methods.
 
 
 ## Articles

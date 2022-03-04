@@ -1,16 +1,17 @@
 ---
-title: "Curriculum vitae"
+title: "Education"
 ---
 
-
-Degrees:
 
 - PhD, Statistics and Data Science, Yale University (2018)
 - MS, Applied Statistics, MS Secondary Education, Indiana University (2011)
 - BS, Neuroscience with Mathematics minor, Tulane University (2007)
 
-
 Here are my [quantitative courses and scores](static/QuantitativeCoursework.pdf).
 
+Interested parties may email me to to ask for a formal resume.
 
-Email me to to ask for a formal resume.
+
+
+
+

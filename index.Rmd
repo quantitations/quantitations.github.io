@@ -10,4 +10,4 @@ output:
         - title-fix.html
 ---
 
- - Note: LLC not yet filed.
+ - Note: LLC in preparation.

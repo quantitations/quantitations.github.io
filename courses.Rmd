@@ -1,0 +1,53 @@
+---
+title: "Selected course materials"
+---
+
+
+Here are some of the courses I've taught at Yale along with sample materials.
+
+
+## Linear Models (S&DS-312/612)
+
+The geometry of least squares; properties of least-squares estimation in the context of linear models, bias-variance trade-off, inference for linear models with normal errors, analysis of variance and contrast tests; the R programming language is used throughout for homework.
+
+Sample material:
+
+- Two pictures for data: observations as points, variables as vectors ([video](https://www.youtube.com/watch?v=pEMmbW-zapM) | [notes](static/teaching/two-pictures.png))
+
+From student evaluations:
+
+- "I cannot recommend [this course] enough. It caused concepts from all my previous statistics and math classes to come together in a mind-blowing way."
+- "This course developed a very interesting perspective on statistical concepts; in particular, how statistical concepts are related to linear
+algebra theory... It's really an innovative and intuitive way of thinking about statistical models."
+- "Taking the course is like being molded by an expert craftsman. Although you might not understand what is going on in the moment, when you take a step back and review the concepts, everything comes together to form a beautiful masterpiece which is this class."
+- "When we tied everything together and summarized the course during our last class, my mind was blown by how beautifully everything fit together and by how much we have learned throughout the semester."
+
+
+## Theory of Statistics (S&DS-242/542)
+
+Study of the principles of statistical analysis. Topics include maximum likelihood, sampling distributions, estimation, confidence intervals, tests of significance, regression, analysis of variance, and the method of least squares. Statistical computing with R.
+
+Sample material:
+
+- L2 space of random variables ([video](https://www.youtube.com/watch?v=yAvtJIRVPD4) | [notes](static/teaching/l2-spaces.png))
+
+From student evaluations:
+
+- "This course was so fun and a great use of the tools you learn in probability! I had never taken a statistics course before but now I feel like I could easily take one and understand the underlying principles driving whatever kind of techniques we would learn!"
+- "I developed a greater appreciation for the mathematical foundation of many common statistical analyses. I learned how to think rigorously
+(i.e., in terms of proven theorems and corollaries) about parameter estimation, hypothesis testing, and linear regression, which yielded a
+deeper understanding of core concepts in data science."
+
+
+## Data Analysis (S&DS-361/661)
+
+A broad survey of tools, tips, and techniques for data analysis. Topics include R programming, Python programming, web scraping and APIs, transformation, curve estimation, regularization and model selection, generalized linear models, maximum likelihood, optimization, classification, resampling methods, and more. Our focus is on performing techniques and not on the theory behind them.
+
+Sample material:
+
+- Iterative fitting ([video](https://www.youtube.com/watch?v=4LfFFSqiEXs) | [script](static/teaching/iterative-fitting.r) | [slides](static/teaching/iterative-fitting.pdf) | [exercise](static/teaching/iterative-fitting-challenge.r) | [solution](static/teaching/iterative-fitting-solutions.r))
+
+From student evaluations:
+
+- "I learned a lot about real-world data analysis... Dr. Brinda really pushed us to think about creative ways to analyze data which made the course exciting and rewarding."
+- "I felt like working through the homeworks was actually meaningful, improved my R and Python skills greatly, and could ultimately help me with data analysis I do in the future."
