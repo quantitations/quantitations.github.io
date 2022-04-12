@@ -1,0 +1,47 @@
+---
+title: "Team"
+---
+
+
+
+<table style="margin: auto; width: 700px; font-size: 16px;"><tr><td>
+
+<span style="font-size: 20px; font-weight: bold; display: block; color: #555; width: 540px; padding-left: 8px; background-color: #fed;">
+Sonya Sawtelle
+</span>
+
+- PhD, Applied Physics (Yale, 2018)
+- 3 years professional experience as data scientist, AI/ML engineer
+- analytics & predictive modeling including deep learning for CV & NLP
+- Python, PyTorch, Kubeflow, SQL, C++, Docker
+
+</td><td>
+
+<img src="static/sds.jpg">
+
+</td></tr></table>
+
+
+<table style="margin: auto; width: 700px; font-size: 16px; margin-top: 65px;"><tr><td>
+
+<img src="static/wdb.jpg">
+
+</td><td>
+
+<span style="font-size: 20px; font-weight: bold; display: block; color: #555; width: 544px; padding-right: 8px; background-color: #dfd; text-align: right; margin-left: auto;">
+W. D. Brinda
+</span>
+
+- PhD, Statistics and Data Science (Yale, 2018)
+- 3 years as lecture/research faculty at Yale Statistics department
+- author of *Visualizing Linear Models* (Springer, 2021)
+- R, Python, SAS, web/mobile development, LaTeX
+
+</td></tr></table>
+
+
+
+
+
+
+

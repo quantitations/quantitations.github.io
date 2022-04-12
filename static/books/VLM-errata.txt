@@ -37,6 +37,8 @@ Chi-squared definition (page 107) - missing squares on Z_1 + ... + Z_k (each ter
 
 Exercise 5.5 solution (page 161) - missing negative sign: first line of derivation in solution should have said Z \geq -t.
 
+Exercise 5.10 solution (page 110) - "the denominator is" should have said "the denominator squared is"
+
 
 --------------------------- FORMAT ------------------
 

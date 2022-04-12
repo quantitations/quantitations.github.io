@@ -11,26 +11,39 @@
 
 
 
-<title>Curriculum vitae</title>
+<title>Books</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link rel="shortcut icon" href="favicon.ico" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +56,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -79,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +144,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +172,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -265,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -278,19 +251,25 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
+  <a href="team.html">Team</a>
+</li>
+<li>
+  <a href="teaching.html">Teaching</a>
+</li>
+<li>
   <a href="books.html">Books</a>
+</li>
+<li>
+  <a href="web-apps.html">Web apps</a>
+</li>
+<li>
+  <a href="education.html">Education</a>
 </li>
 <li>
   <a href="research.html">Research</a>
 </li>
 <li>
   <a href="blog.html">Blog</a>
-</li>
-<li>
-  <a href="web-apps.html">Web apps</a>
-</li>
-<li>
-  <a href="curriculum-vitae.html">Curriculum vitae</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -300,25 +279,67 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">Curriculum vitae</h1>
+<h1 class="title toc-ignore">Books</h1>
 
 </div>
 
 
-<p>Degrees:</p>
+<p><em><a
+href="https://www.dpbolvw.net/click-100373821-12898971?url=https%3A%2F%2Fwww.springer.com%2Fgp%2Fbook%2F9783030641665%3FcountryChanged%3Dtrue">Visualizing
+Linear Models</a></em> (Springer, 2021) - This short textbook introduces
+the theory of linear models, emphasizing two important and complementary
+ways of visualizing the concepts: the <em>observations</em> picture and
+the <em>variables</em> picture. Accompanying <em>flash cards</em> help
+reinforce the material.</p>
 <ul>
-<li>PhD, Statistics and Data Science, Yale University (2018)</li>
-<li>MS, Applied Statistics, MS Secondary Education, Indiana University (2011)</li>
-<li>BS, Neuroscience with Mathematics minor, Tulane University (2007)</li>
+<li>all exercises: <a href="static/books/VLM-all.apkg">anki</a> | <a
+href="static/books/VLM-all-exercises.pdf">printable document</a> | <a
+href="static/books/VLM-all-cards.pdf">printable cards</a></li>
+<li>red + blue only: <a href="static/books/VLM-select.apkg">anki</a> |
+<a href="static/books/VLM-select-exercises.pdf">printable document</a> |
+<a href="static/books/VLM-select-cards.pdf">printable cards</a></li>
+<li><a href="static/books/VLM-errata.txt">errata</a></li>
 </ul>
-<p>Here are my <a href="static/QuantitativeCoursework.pdf">quantitative courses and scores</a>.</p>
-<p>Email me to to ask for a formal resume.</p>
+<p><em>Visualizing Random Variables</em> - This will be a follow-up to
+<em>Visualizing Linear Models</em> that encourages the student to extend
+the two-pictures idea to random vectors more generally by understanding
+<span class="math inline">\(L^2\)</span> spaces using intuition from
+Euclidean space.</p>
+<p><em><a href="static/books/Data-Analysis-with-R.pdf">Data Analysis
+with R: The Big Picture</a></em> - A gentle and systematic introduction
+for complete beginners. (Unfinished.)</p>
+<p><em>A Systematic Guide to Mathematical Statistics</em> - This is a
+long-term project, but early drafts of some sections are posted
+below.</p>
+<ul>
+<li><a href="static/books/1-1-topological-spaces.pdf">1-1 Topological
+spaces</a></li>
+<li><a href="static/books/1-4-normed-spaces.pdf">1-4 Normed
+spaces</a></li>
+<li><a href="static/books/1-5-inner-product-spaces.pdf">1-5 Inner
+product spaces</a></li>
+<li><a href="static/books/2-1-measurable-spaces.pdf">2-1 Measurable
+spaces</a></li>
+<li><a href="static/books/2-2-measures.pdf">2-2 Measures</a></li>
+<li><a href="static/books/2-3-integrals.pdf">2-3 Integrals</a></li>
+<li><a
+href="static/books/2-4-probability-measures-and-expectations.pdf">2-4
+Probability measures and expectations</a></li>
+<li><a href="static/books/2-5-product-spaces.pdf">2-5 Product
+spaces</a></li>
+<li><a href="static/books/2-6-spaces-of-measurable-functions.pdf">2-6
+Spaces of measurable functions</a></li>
+<li><a href="static/books/2-7-metric-spaces-of-measures.pdf">2-7 Metric
+spaces of measures</a></li>
+<li><a href="static/books/3-3-information-theory.pdf">3-3 Information
+theory</a></li>
+</ul>
 
-<p id="footer">Copyright &copy; 2021 Quantitations LLC.</p>
+<p id="footer">Copyright &copy; 2022 Quantitations LLC.</p>
 
 
 
@@ -328,7 +349,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -346,7 +367,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

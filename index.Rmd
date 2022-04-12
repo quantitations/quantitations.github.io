@@ -9,5 +9,3 @@ output:
         - footer.html
         - title-fix.html
 ---
-
- - Note: LLC in preparation.

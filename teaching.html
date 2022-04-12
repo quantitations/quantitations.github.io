@@ -13,24 +13,37 @@
 
 <title>Teaching</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link rel="shortcut icon" href="favicon.ico" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +56,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -79,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +84,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +121,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +133,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +144,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +172,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -265,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -278,19 +251,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li>
-  <a href="teaching.html">Teaching</a>
-</li>
-<li>
-  <a href="books.html">Books</a>
-</li>
-<li>
-  <a href="web-apps.html">Web apps</a>
-</li>
-<li>
-  <a href="education.html">Education</a>
-</li>
-<li>
-  <a href="research.html">Research</a>
+  <a href="team.html">Team</a>
 </li>
 <li>
   <a href="blog.html">Blog</a>
@@ -303,7 +264,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -314,60 +275,119 @@ $(document).ready(function () {
 
 <div id="courses" class="section level2">
 <h2>Courses</h2>
-<p>Here are some of the courses I’ve taught at Yale along with sample materials.</p>
+<p>Here are some of the courses I’ve taught at Yale along with sample
+materials.</p>
 <div id="linear-models-sds-312612" class="section level3">
 <h3>Linear Models (S&amp;DS-312/612)</h3>
-<p>The geometry of least squares; properties of least-squares estimation in the context of linear models, bias-variance trade-off, inference for linear models with normal errors, analysis of variance and contrast tests; the R programming language is used throughout for homework.</p>
+<p>The geometry of least squares; properties of least-squares estimation
+in the context of linear models, bias-variance trade-off, inference for
+linear models with normal errors, analysis of variance and contrast
+tests; the R programming language is used throughout for homework.</p>
 <p>Sample material:</p>
 <ul>
-<li>Two pictures for data: observations as points, variables as vectors (<a href="https://www.youtube.com/watch?v=pEMmbW-zapM">video</a> | <a href="static/teaching/two-pictures.png">notes</a>)</li>
+<li>Visualizing data: observations as points, variables as vectors (<a
+href="https://www.youtube.com/watch?v=pEMmbW-zapM">video</a> | <a
+href="static/teaching/two-pictures.png">notes</a>)</li>
 </ul>
 <p>From student evaluations:</p>
 <ul>
-<li>“I cannot recommend [this course] enough. It caused concepts from all my previous statistics and math classes to come together in a mind-blowing way.”</li>
-<li>“This course developed a very interesting perspective on statistical concepts; in particular, how statistical concepts are related to linear algebra theory… It’s really an innovative and intuitive way of thinking about statistical models.”</li>
-<li>“Taking the course is like being molded by an expert craftsman. Although you might not understand what is going on in the moment, when you take a step back and review the concepts, everything comes together to form a beautiful masterpiece which is this class.”</li>
-<li>“When we tied everything together and summarized the course during our last class, my mind was blown by how beautifully everything fit together and by how much we have learned throughout the semester.”</li>
+<li>“I cannot recommend [this course] enough. It caused concepts from
+all my previous statistics and math classes to come together in a
+mind-blowing way.”</li>
+<li>“This course developed a very interesting perspective on statistical
+concepts; in particular, how statistical concepts are related to linear
+algebra theory… It’s really an innovative and intuitive way of thinking
+about statistical models.”</li>
+<li>“Taking the course is like being molded by an expert craftsman.
+Although you might not understand what is going on in the moment, when
+you take a step back and review the concepts, everything comes together
+to form a beautiful masterpiece which is this class.”</li>
+<li>“When we tied everything together and summarized the course during
+our last class, my mind was blown by how beautifully everything fit
+together and by how much we have learned throughout the semester.”</li>
 </ul>
 </div>
 <div id="theory-of-statistics-sds-242542" class="section level3">
 <h3>Theory of Statistics (S&amp;DS-242/542)</h3>
-<p>Study of the principles of statistical analysis. Topics include maximum likelihood, sampling distributions, estimation, confidence intervals, tests of significance, regression, analysis of variance, and the method of least squares. Statistical computing with R.</p>
+<p>Study of the principles of statistical analysis. Topics include
+maximum likelihood, sampling distributions, estimation, confidence
+intervals, tests of significance, regression, analysis of variance, and
+the method of least squares. Statistical computing with R.</p>
 <p>Sample material:</p>
 <ul>
-<li>L2 space of random variables (<a href="https://www.youtube.com/watch?v=yAvtJIRVPD4">video</a> | <a href="static/teaching/l2-spaces.png">notes</a>)</li>
+<li>L2 space of random variables (<a
+href="https://www.youtube.com/watch?v=yAvtJIRVPD4">video</a> | <a
+href="static/teaching/l2-spaces.png">notes</a>)</li>
 </ul>
 <p>From student evaluations:</p>
 <ul>
-<li>“This course was so fun and a great use of the tools you learn in probability! I had never taken a statistics course before but now I feel like I could easily take one and understand the underlying principles driving whatever kind of techniques we would learn!”</li>
-<li>“I developed a greater appreciation for the mathematical foundation of many common statistical analyses. I learned how to think rigorously (i.e., in terms of proven theorems and corollaries) about parameter estimation, hypothesis testing, and linear regression, which yielded a deeper understanding of core concepts in data science.”</li>
+<li>“This course was so fun and a great use of the tools you learn in
+probability! I had never taken a statistics course before but now I feel
+like I could easily take one and understand the underlying principles
+driving whatever kind of techniques we would learn!”</li>
+<li>“I developed a greater appreciation for the mathematical foundation
+of many common statistical analyses. I learned how to think rigorously
+(i.e., in terms of proven theorems and corollaries) about parameter
+estimation, hypothesis testing, and linear regression, which yielded a
+deeper understanding of core concepts in data science.”</li>
 </ul>
 </div>
 <div id="data-analysis-sds-361661" class="section level3">
 <h3>Data Analysis (S&amp;DS-361/661)</h3>
-<p>A broad survey of tools, tips, and techniques for data analysis. Topics include R programming, Python programming, web scraping and APIs, transformation, curve estimation, regularization and model selection, generalized linear models, maximum likelihood, optimization, classification, resampling methods, and more. Our focus is on performing techniques and not on the theory behind them.</p>
+<p>A broad survey of tools, tips, and techniques for data analysis.
+Topics include R programming, Python programming, web scraping and APIs,
+transformation, curve estimation, regularization and model selection,
+generalized linear models, maximum likelihood, optimization,
+classification, resampling methods, and more. Our focus is on performing
+techniques and not on the theory behind them.</p>
 <p>Sample material:</p>
 <ul>
-<li>Iterative fitting (<a href="https://www.youtube.com/watch?v=4LfFFSqiEXs">video</a> | <a href="static/teaching/iterative-fitting.r">script</a> | <a href="static/teaching/iterative-fitting.pdf">slides</a> | <a href="static/teaching/iterative-fitting-challenge.r">exercise</a> | <a href="static/teaching/iterative-fitting-solutions.r">solution</a>)</li>
+<li>Iterative fitting (<a
+href="https://www.youtube.com/watch?v=4LfFFSqiEXs">video</a> | <a
+href="static/teaching/iterative-fitting.r">script</a> | <a
+href="static/teaching/iterative-fitting.pdf">slides</a> | <a
+href="static/teaching/iterative-fitting-challenge.r">exercise</a> | <a
+href="static/teaching/iterative-fitting-solutions.r">solution</a>)</li>
 </ul>
 <p>From student evaluations:</p>
 <ul>
-<li>“I learned a lot about real-world data analysis… Dr. Brinda really pushed us to think about creative ways to analyze data which made the course exciting and rewarding.”</li>
-<li>“I felt like working through the homeworks was actually meaningful, improved my R and Python skills greatly, and could ultimately help me with data analysis I do in the future.”</li>
+<li>“I learned a lot about real-world data analysis… Dr. Brinda really
+pushed us to think about creative ways to analyze data which made the
+course exciting and rewarding.”</li>
+<li>“I felt like working through the homeworks was actually meaningful,
+improved my R and Python skills greatly, and could ultimately help me
+with data analysis I do in the future.”</li>
 </ul>
 <hr />
 </div>
 </div>
 <div id="workshops" class="section level2">
 <h2>Workshops</h2>
-<p>Here are some of the workshops I’ve taught at Yale along with sample materials.</p>
+<p>Here are some of the workshops I’ve taught at Yale along with sample
+materials.</p>
 <div id="mixed-effects-modeling-with-r" class="section level3">
 <h3>Mixed Effects Modeling with R</h3>
-<p>A <em>random effect</em> is a model coefficient that is itself modeled as a random draw from a distribution that may, in turn, involve unknown parameters. A <em>linear mixed effects model</em> can have both terms with fixed (unknown) coefficients and terms with random coefficients. This workshop begins by clarifying linear mixed effects models as a generalization of ordinary linear models then quickly moves into four concrete examples, while drawing plenty of plots to aid your understanding. (<a href="https://www.youtube.com/watch?v=JfWHZBfhOvE">video</a> | <a href="static/teaching/Mixed-Effects-Modeling-with-R.pdf">slides</a> | <a href="static/teaching/iterative-fitting-solutions.r">script</a>)</p>
+<p>A <em>random effect</em> is a model coefficient that is itself
+modeled as a random draw from a distribution that may, in turn, involve
+unknown parameters. A <em>linear mixed effects model</em> can have both
+terms with fixed (unknown) coefficients and terms with random
+coefficients. This workshop begins by clarifying linear mixed effects
+models as a generalization of ordinary linear models then quickly moves
+into four concrete examples, while drawing plenty of plots to aid your
+understanding. (<a
+href="https://www.youtube.com/watch?v=JfWHZBfhOvE">video</a> | <a
+href="static/teaching/Mixed-Effects-Modeling-with-R.pdf">slides</a> | <a
+href="static/teaching/iterative-fitting-solutions.r">script</a>)</p>
 </div>
 <div id="principal-component-analysis-with-r" class="section level3">
 <h3>Principal Component Analysis with R</h3>
-<p><em>Principal components analysis (PCA)</em> is a technique for reducing the dimension of your data while preserving their “shape” as well as possible. In the first part of the workshop, we’ll cover the theory behind PCA. After that, we’ll work through several examples together using R. (<a href="static/teaching/Principal-Components-Analysis-with-R.pdf">slides</a> | <a href="static/teaching/PCA.r">script</a>)</p>
+<p><em>Principal components analysis (PCA)</em> is a technique for
+reducing the dimension of your data while preserving their “shape” as
+well as possible. In the first part of the workshop, we’ll cover the
+theory behind PCA. After that, we’ll work through several examples
+together using R. (<a
+href="static/teaching/Principal-Components-Analysis-with-R.pdf">slides</a>
+| <a href="static/teaching/PCA.r">script</a>)</p>
 </div>
 <div id="python-series" class="section level3">
 <h3>Python series</h3>
@@ -391,7 +411,8 @@ $(document).ready(function () {
 <li>apps (Flask)</li>
 </ul>
 </div>
-<div id="session-3-data-science-and-machine-learning" class="section level4">
+<div id="session-3-data-science-and-machine-learning"
+class="section level4">
 <h4>Session 3: Data Science and Machine Learning</h4>
 <ul>
 <li>SciPy ecosystem (NumPy, Pandas, SciPy, Matplotlib)</li>
@@ -402,14 +423,18 @@ $(document).ready(function () {
 <div id="session-4-project" class="section level4">
 <h4>Session 4: Project</h4>
 <ul>
-<li>Federalist Papers (web scraping, NLP feature extraction, dimension reduction, classification)</li>
+<li>Federalist Papers (web scraping, NLP feature extraction, dimension
+reduction, classification)</li>
 </ul>
-<p>All Python workshop files are hosted on GitHub (<a href="https://github.com/quantitations/python-day1">Sessions 1 &amp; 2</a> | <a href="https://github.com/quantitations/python-day2">Sessions 3 &amp; 4</a>)</p>
+<p>All Python workshop files are hosted on GitHub (<a
+href="https://github.com/quantitations/python-day1">Sessions 1 &amp;
+2</a> | <a href="https://github.com/quantitations/python-day2">Sessions
+3 &amp; 4</a>)</p>
 </div>
 </div>
 </div>
 
-<p id="footer">Copyright &copy; 2022 Quantitations LLC.</p>
+<p id="footer">&copy; 2022 Quantitations LLC</p>
 
 
 
@@ -419,7 +444,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -437,7 +462,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

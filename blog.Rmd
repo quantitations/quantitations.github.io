@@ -3,4 +3,28 @@ title: "Blog"
 ---
 
 
-I used to write quite a bit about mathematics, data science, productivity, and whatever else was on my mind. Some of my writings are still available at an old [blog](http://blog.quantitations.com), but most are currently scattered about on my computer. At some point, I hope to have time to organize everything and make it available and, better yet, to start posting regularly again.
+## Theory meets practice
+
+#### April 1, 2022
+
+
+
+We are pleased to announce the launch of a statistical consultancy, Quantitations LLC, a collaboration between a practicing data scientist and an academic statistical theorist. We work together to provide creative, cutting-edge, and mathematically sound solutions to our clients.
+
+Here are some of the services we can provide:
+
+- inference (estimation, hypothesis testing, confidence intervals)
+- biostatistics
+- experimental design
+- Monte Carlo simulation
+- exploratory analysis and visualizations
+- predictive modeling
+- deep learning (including computer vision and natural language)
+- data cleaning
+- databases and SQL
+- web scraping
+- academic writing
+- teaching
+- web/mobile development
+
+That doesn't cover our full breadth knowledge and experience, and we don't mind branching out with new challenges. If you have a project that you'd like us to consider, feel free to reach out via email to wdb@quantitations.com.
