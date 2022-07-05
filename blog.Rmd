@@ -14,7 +14,7 @@ We are pleased to announce the launch of a statistical consultancy, Quantitation
 Here are some of the services we can provide:
 
 - inference (estimation, hypothesis testing, confidence intervals)
-- biostatistics
+- biostatistics, especially clinical trials
 - experimental design
 - Monte Carlo simulation
 - exploratory analysis and visualizations
