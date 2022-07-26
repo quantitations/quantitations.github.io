@@ -4,11 +4,11 @@ navbar:
   title: "Quantitations"
   left:
     - text: "Home"
-      href: index.html
+      href: index
     - text: "Team"
-      href: team.html
+      href: team
     - text: "Blog"
-      href: blog.html
+      href: blog
 output:
   html_document:
     theme: journal
