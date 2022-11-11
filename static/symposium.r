@@ -185,8 +185,6 @@ summary(m)
 # The summary provides a significance probability for the hypothesis test
 # that females and males have the same expected BP.
 
-names(summary(m))
-summary(m)$coefficients
 summary(m)$coefficients[2, 5] # p-value
 
 # The summary also provides estimates of the standard deviations
@@ -218,7 +216,7 @@ ranova(m)
 # But decreased AIC when the random subject effect is dropped.
 
 
-
+################################
 
 
 
@@ -248,7 +246,7 @@ costs.freq <- read.csv("https://quantitations.com/static/costs.freq.csv")$x
 
 # Gaussian kernel density smoothing
 d <- density(costs.freq)
-plot(d, main="Distribution of Cost")
+plot(d, main="Estimated Distribution of Cost")
 
 integrate(approxfun(d), lower=600000, upper=620000)
 
@@ -265,18 +263,18 @@ library(nimble)
 
 dataCode <- nimbleCode({
   # Model
-  for (i in 1:N.m) {
-    for (j in 1:M.m[i]) {
-      y.m[i,j] ~ mu.m + b.m[i] + dnorm(sd = sigma.within)
-    }
-    b.m[i] ~ dnorm(sd = sigma.between)
-  }
-
   for (i in 1:N.f) {
     for (j in 1:M.f[i]) {
       y.f[i,j] ~ mu.f + b.f[i] + dnorm(sd = sigma.within)
     }
     b.f[i] ~ dnorm(sd = sigma.between)
+  }
+  
+  for (i in 1:N.m) {
+    for (j in 1:M.m[i]) {
+      y.m[i,j] ~ mu.m + b.m[i] + dnorm(sd = sigma.within)
+    }
+    b.m[i] ~ dnorm(sd = sigma.between)
   }
   
   # Priors
@@ -359,6 +357,7 @@ samples <- runMCMC(myModelMCMC, niter=nBurn + nSamp*nSkip, nburnin=nBurn, thin=n
 
 #write.csv(samples, "samples.csv", row.names=FALSE)
 samples <- read.csv("https://quantitations.com/static/samples.csv")
+head(samples)
 
 
 plot(samples[ , 'mu.f'], type='l', col="red", xlab='iteration',  ylab=expression(mu), ylim=c(100, 135))
@@ -401,18 +400,18 @@ sum(samples[ , 'mu.m'] > samples[ , 'mu.f'])/nSamp
 # whose BP will be measured three times each next year
 predCode <- nimbleCode({
   # Model
-  for (i in 1:N.m) {
-    for (j in 1:M) {
-      y.m[i,j] ~ mu.m + b.m[i] + dnorm(sd = sigma.within)
-    }
-    b.m[i] ~ dnorm(sd = sigma.between)
-  }
-  
   for (i in 1:N.f) {
     for (j in 1:M) {
       y.f[i,j] ~ mu.f + b.f[i] + dnorm(sd = sigma.within)
     }
     b.f[i] ~ dnorm(sd = sigma.between)
+  }
+  
+  for (i in 1:N.m) {
+    for (j in 1:M) {
+      y.m[i,j] ~ mu.m + b.m[i] + dnorm(sd = sigma.within)
+    }
+    b.m[i] ~ dnorm(sd = sigma.between)
   }
   
   # Priors
