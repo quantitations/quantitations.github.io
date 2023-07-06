@@ -1,4 +1,6 @@
 
+# install.packages("RColorBrewer")
+
 source("http://quantitations.com/static/mixed-effects-simulations.r")
 source("http://quantitations.com/static/mixed-effects-plots.r")
 
@@ -631,7 +633,8 @@ e
 # However, what if we had instead tested the null hypothesis that
 # the expected slope of C is greater than the average of the expected
 # slopes of A and B?
-contrast(e, list(c(-.5, -.5, 1)))$emmeans
+
+contrast(e, list(c(-.5, -.5, 1)))
 # p-value .064 --> decent evidence against the null,
 # i.e. indicating relative effectiveness of treatment C.
 
